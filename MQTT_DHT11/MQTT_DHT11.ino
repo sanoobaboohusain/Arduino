@@ -7,12 +7,12 @@
 #define DHTTYPE DHT11
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-char userId[] = "sanuxtreme@gmail.com";
-char passwd[] = "06ea7c46";  
+char userId[] = "";
+char passwd[] = "";  
 //char server[] = "mqtt.dioty.co";
 IPAddress server(162,222,176,239);
 unsigned int port = 1883;
-char topic[] = "/sanuxtreme@gmail.com/temp"; 
+char topic[] = "//temp"; 
 int deviceID = 99;
 EthernetClient client; 
 PubSubClient arduinoClient(server, port, 0, client) ;
